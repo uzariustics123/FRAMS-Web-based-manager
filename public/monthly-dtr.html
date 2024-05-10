@@ -1,0 +1,231 @@
+<!DOCTYPE html> 
+                <html dir='ltr' lang='en'> 
+                  <head> 
+                    <meta charset='UTF-8' /> 
+                    <meta http-equiv='X-UA-Compatible' content='IE=edge' /> 
+                <meta name='viewport' content='width=device-width, maximum-scale=0, user-scalable=yes'> 
+                    <style type='text/css'> 
+                      body { 
+                        background-color: #f7f7f7; 
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 
+                          sans-serif; 
+                        color: #333; 
+                        text-align: left; 
+                        font-size: 12px; 
+                        margin: 0; 
+                      } 
+                      .container { 
+                        margin: 0 auto; 
+                        margin-top: 35px; 
+                        padding: 40px; 
+                        width: 980px; 
+                        height: auto; 
+                        background-color: #fff; 
+                      } 
+                      th { 
+                        font-weight: normal; 
+                        padding: opx; 
+                        margin: 0px auto; 
+                      } 
+                      td { 
+                        padding-top: 4px; 
+                        padding-bottom: 4px; 
+                        padding-left: 4px; 
+                        padding-right: 8px; 
+                        text-align: center; 
+                        font-size: 10px; 
+                        max-lines: 1; 
+                        white-space: nowrap; 
+                      } 
+                      .center-text { 
+                        text-align: center; 
+                      } 
+                      .left-text{ 
+                        padding-top: 8px; 
+                        text-align: start; 
+                      } 
+                      .table-root { 
+                        display: flex; 
+                      } 
+                      table { 
+                        /* border: 1px solid #333; */ 
+                        border-collapse: collapse; 
+                        margin: 0 auto; 
+                        width: 740px; 
+                      } 
+                      .dtr-title { 
+                        font-size: 12sp; 
+                        margin-bottom: 15px; 
+                        margin-top: 18px; 
+                        max-lines: 1; 
+                        font-weight: bold; 
+                      } 
+                      .employee-name { 
+                        font-size: 11ps; 
+                        margin-top: 18px; 
+                        max-lines: 1; 
+                        font-weight: bold; 
+                        text-align: center; 
+                      } 
+                      .underline { 
+                        border-bottom: 1px solid black; 
+                      } 
+                      .space-top { 
+                        margin-top: 18px; 
+                      } 
+                      .space-bot { 
+                        padding-bottom: 18px; 
+                      } 
+                      .borderd { 
+                        border: 1px solid black; 
+                      } 
+                      .padd { 
+                        padding: 12px; 
+                      } 
+                      .space-top-table { 
+                        padding-top: 15px; 
+                      } 
+                      .dtr-col { 
+                        border: 1px solid black; 
+                        padding: 4px; 
+                         
+                        font-size: 12px; 
+                        text-align: center; 
+                      } 
+                      h4, 
+                      p { 
+                        margin: 0px; 
+                      } 
+                      .keys{ 
+                        text-align: center; 
+                        /* padding-top: 1px; 
+                        padding-bottom: 1px; */ 
+                        border: 1px solid black; 
+                      } 
+                      .total-key{ 
+                        text-align: center; 
+                        font-size: 12px; 
+                        font-weight: bold; 
+                        border: 1px solid black; 
+                      } 
+                      .signature{ 
+                        padding-top: 40px; 
+                        border-bottom: 1px solid black; 
+                      } 
+                      .signature-below{ 
+                        font-weight: bolder; 
+                      } 
+                      .actions{
+                        width: 100%;
+                        height: 80px;
+                        
+                      }
+                      .yeardiv{
+                        float: right;
+                      }
+                    </style> 
+                  </head> 
+                  <body> 
+                    <div class='container'> 
+                      <div class="actions">
+                        <button id="printDocuBtn">print document</button>
+                        <div class="yeardiv">
+                          <label for="monthSelect">Choose month:</label>
+                          <select name="monthSelect" id="monthSelect">
+                            <option value="1">January</option>
+                            <option value="2">Febuary</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                          </select>
+                          <label for="yearSelect">Choose year:</label>
+                          <select name="yearSelect" id="yearSelect">
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option><option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                          </select>
+                        </div>
+                        
+                      </div>
+                      <!-- <p>Civil Service Form No. 48</p>  -->
+                      <div class='table-root'> 
+                        <table class='table-left'> 
+                            <caption class='dtr-title'> 
+                                MONTHLY ATTENDANCE RECORD 
+                              </caption> 
+                              <thead> 
+                                
+                                <tr> 
+                                  <th class='space-top' colspan='2'>For the month of</td> 
+                                  <th id="date" class='underline center-text' colspan='31'>  date  </td> 
+                                </tr>
+                                <tr> <th> <h style="color: white;">.</h></th></tr> 
+                                <tr id="headerRowData"> 
+                                  <th class='dtr-col'>ID Number</th> 
+                                  <th class='dtr-col' >Employee Name</th> 
+                                  <th class='dtr-col' >Day 1</th> 
+                                  <th class='dtr-col' >Day 2</th> 
+                                  <th class='dtr-col' >Day 3</th> 
+                                  <th class='dtr-col' >Day 4</th> 
+                                  <th class='dtr-col' >Day 5</th> 
+                                  <th class='dtr-col' >Day 6</th> 
+                                  <th class='dtr-col' >Day 7</th> 
+                                  <th class='dtr-col' >Day 8</th> 
+                                  <th class='dtr-col' >Day 9</th> 
+                                  <th class='dtr-col' >Day 10</th> 
+                                  <th class='dtr-col' >Day 11</th> 
+                                  <th class='dtr-col' >Day 12</th> 
+                                  <th class='dtr-col' >Day 13</th> 
+                                  <th class='dtr-col' >Day 14</th> 
+                                  <th class='dtr-col' >Day 15</th> 
+                                  <th class='dtr-col' >Day 16</th> 
+                                  <th class='dtr-col' >Day 17</th> 
+                                  <th class='dtr-col' >Day 18</th> 
+                                  <th class='dtr-col' >Day 19</th> 
+                                  <th class='dtr-col' >Day 20</th> 
+                                  <th class='dtr-col' >Day 21</th> 
+                                  <th class='dtr-col' >Day 22</th> 
+                                  <th class='dtr-col' >Day 23</th> 
+                                  <th class='dtr-col' >Day 24</th> 
+                                  <th class='dtr-col' >Day 25</th> 
+                                  <th class='dtr-col' >Day 26</th> 
+                                  <th class='dtr-col' >Day 27</th> 
+                                  <th class='dtr-col' >Day 28</th> 
+                                  <th class='dtr-col' >Day 29</th> 
+                                  <th class='dtr-col' >Day 30</th> 
+                                </tr> 
+                                
+                              </thead> 
+                              <tbody id="tbody"> 
+                                
+                                <tr> 
+                                  <td class='borderd'>2018-0234</td>
+                                  
+                                </tr> 
+                              </tbody> 
+                              <tfoot> 
+                              </tfoot> 
+                            </table> 
+                        &nbsp; 
+                        <!-- 2nd table --> 
+                      </div> 
+                    </div> 
+                  </body> 
+                  <script type="module" src="./js/monthly-dtr.js"></script>
+                </html>;

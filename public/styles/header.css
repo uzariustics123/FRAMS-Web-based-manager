@@ -1,0 +1,60 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.main-logo {
+    font-weight: 600 !important;
+    color: brown;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: xx-large;
+}
+
+.logo2 {
+    font-size: medium;
+    color: brown;
+    font-style: normal;
+    font-family: 'Rajdhani', sans-serif;
+}
+.addbtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+}
+
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    cursor: pointer;
+}
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+h4 ,p{
+    font-family: 'Josefin Sans', sans-serif;
+}

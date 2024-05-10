@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FRAMS</title>
+    <!-- <link type="text/css" rel="stylesheet" href="./plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css"> -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./plugins/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/neumorphism.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/sidebar.css" />
+    <link rel="stylesheet" href="./styles/neu-loader.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div
+      class="sidebar-class bg-primary border-light shadow-soft closed"
+      id="sidebar">
+      <span
+        id="drawer-close-btn"
+        class="material-icons md-48 rounded bg-primary icon icon-shape shadow-soft border border-light rounded-circle closed"
+        >chevron_right</span>
+      <div class="head-bar p-1">
+        <div class="">
+          <!-- Icon box -->
+          
+          <p class="sidebar-logo">FRAMS</p>
+          <!-- <div class="icon icon-sm icon-shape-sm shadow-soft border border-light rounded-circle logo-div"><img src="./images/logo.jfif" class="logo-img" alt=""> </div> -->
+          <!-- End of Icon box -->
+          
+      </div>
+      
+      </div>
+      <!-- list icon menu -->
+      <ul class="sidebar-icon-menu">
+    
+        <li class="sidebar-icon-menu-item">
+          <button id="employee-btn" class="btn btn-icon-only btn-primary mr-3 active" type="button" aria-label="users" title="Users" >
+            <span class="material-icons"> people</span>
+          </button>
+        </li>
+        <li class="sidebar-icon-menu-item">
+          <button id="attendances-btn" class="btn btn-icon-only btn-primary mr-3 " type="button"  aria-label="Attendances" title="Attendances" >
+            <span class="material-icons"> recent_actors</span>
+          </button>
+        </li>
+        <li class="sidebar-icon-menu-item">
+          <button id="devices-btn" class="btn btn-icon-only btn-primary mr-3 " type="button"  aria-label="Visit Devices" title="Visit Devices" >
+            <span class="material-icons"> list_alt</span>
+          </button>
+        </li>
+        <li class="sidebar-icon-menu-item">
+          <button id="pin-btn" class="btn btn-icon-only btn-primary mr-3 " type="button"  aria-label="PIN code" title="PIN Code" >
+            <span class="material-icons"> pin</span>
+          </button>
+        </li>
+        <li class="sidebar-icon-menu-item">
+          <button id="logout-btn" class="btn btn-icon-only btn-primary mr-3" type="button" aria-label="Logout" title="Log out"> 
+            <span class="material-icons"> power_settings_new</span>
+          </button>
+        </li>
+      </ul>
+      <!-- list menu -->
+        <ul class="sidebar-list-menu closed" id="sidebar-list-menu" >
+            
+            <li id="asdw" class="sidebar-list-item ">
+              <div id="employee-btn-list" class="item active-item">
+                <span  class="material-icons"> people</span> <span class="title">Employees</span> 
+              </div>
+            </li>
+            <li id="kkk" class="sidebar-list-item">
+              <div id="attendances-btn-list" class="item ">
+                <span class="material-icons"> recent_actors</span> <span class="title">Attendances</span>
+              </div>
+            </li>
+            <li id="kkk" class="sidebar-list-item">
+              <div id="devices-btn-list" class="item ">
+                <span class="material-icons"> list_alt</span> <span class="title">Devices list</span>
+              </div>
+            </li>
+            <li id="kkk" class="sidebar-list-item">
+              <div id="pin-btn-list" class="item  ">
+                <span class="material-icons"> pin</span> <span class="title">PIN</span>
+              </div>
+            </li>
+            <li id="temt" class="sidebar-list-item ">
+              <div id="logout-btn-list" class="item">
+                <span  class="material-icons"> power_settings_new</span> <span class="title">Log out</span>
+              </div>
+            </li>
+        </ul>
+    </div>
+    <!-- main container -->
+    <div id="main-container" class="container p-5 container-fluid">
+      <!-- <button type="button" class="btn btn-primary btn-sm mr-4 mb-4" data-bs-toggle="tooltip" data-placement="top" title="Tooltip on top">
+        Tooltip on top
+    </button>
+      <div class="btn-group mr-2 mb-2">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="fas fa-angle-down dropdown-arrow"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div> -->
+      <div class="loading">
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+      </div>
+    </div>
+    
+
+
+    <!-- alerter msg and title -->
+    
+  </body>
+  <!-- core plugins -->
+  <script>
+    
+  </script>
+  <script src="./plugins/Jquery-3.6.3/jquery-3.6.3.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
+
+  <!-- <script src="./plugins/jquery/dist/jquery.min.js"></script>
+<script src="./plugins/popper.js/dist/umd/popper.min.js"></script>
+<script src="./plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./plugins/headroom.js/dist/headroom.min.js"></script> -->
+
+  <!-- <script src="https://unpkg.com/onscreen/dist/on-screen.umd.min.js"></script> -->
+  <script src="./plugins/onscreen/dist/on-screen.umd.min.js"></script>
+  <script src="./plugins/nouislider/distribute/nouislider.min.js"></script>
+  <script src="./plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+  <script src="./plugins/waypoints/lib/jquery.waypoints.min.js"></script>
+  <script src="./plugins/jarallax/dist/jarallax.min.js"></script>
+  <script src="./plugins/jquery.counterup/jquery.counterup.min.js"></script>
+  <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+  <script src="./plugins/jquery-countdown/dist/jquery.countdown.min.js"></script>
+  <script src="./plugins/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="./plugins/prismjs/prism.js"></script>
+
+  <!-- neumorphs -->
+  <!-- <script>
+    $(document).ready(function () {});
+    function showAlert(title, message, lbtn, rbtn, funcLeftBtn, funcRightBtn) {
+      $("#alerter-title").html(title);
+      $("#alerter-msg").html(message);
+      $("#alerter-dialog").modal("show");
+      $("#alerter-l-btn").html(lbtn);
+      $("#alerter-r-btn").html(rbtn);
+      $("#alerter-l-btn").on("click", funcLeftBtn);
+      $("#alerter-r-btn").on("click", funcRightBtn);
+    }
+  </script> -->
+  <script src="./js/alerter.js"></script>
+  <script src="./js/loader.js"></script>
+  <script src="./js/neumorphism.js"></script>
+  <script type="module" src="./js/sidebar.js"></script>
+  <!-- <script type="module" src="./js/editable-employee-fields.js"></script> -->
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+  <script src="https://themesberg.com/docs/neumorphism-ui/assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script></script>
+    <!-- <dotlottie-player src="https://lottie.host/df219d8b-8c14-4eb5-8346-0e4d53868adc/6PF9WBiV8f.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player> -->
+  
+</html>
